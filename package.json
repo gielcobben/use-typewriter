@@ -1,10 +1,10 @@
 {
   "name": "use-typewriter",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Typewriter Hook",
-  "author": "gielcobben",
+  "author": "gielcobben <g.cobben@gmail.com>",
   "license": "MIT",
-  "repository": "gielcobben/use-typewriter",
+  "repository": "git@github.com:gielcobben/use-typewriter.git",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
