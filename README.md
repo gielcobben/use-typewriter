@@ -1,36 +1,68 @@
-# use-typewriter
+# Hook: Typewriter
 
-> Typewriter Hook
+## Installation
 
-[![NPM](https://img.shields.io/npm/v/use-typewriter.svg)](https://www.npmjs.com/package/use-typewriter) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+Install using [Yarn](https://yarnpkg.com):
 
-## Install
+```sh
+yarn add use-typewriter
+```
 
-```bash
-npm install --save use-typewriter
+or NPM:
+
+```sh
+npm install use-typewriter --save
 ```
 
 ## Usage
 
+### Basic
+
 ```tsx
-import * as React from 'react'
+import React from "react";
+import useTypewriter from "use-typewriter";
 
-import { useMyHook } from 'use-typewriter'
+const Component = () => {
+  const currentWord = useTypewriter({
+    words: ["Hello World"]
+  });
 
-const Example = () => {
-  const example = useMyHook()
+  return <div>{currentWord}</div>;
+};
+```
+
+### With Cursor
+
+```tsx
+import React from "react";
+import useTypewriter, { Cursor } from "use-typewriter";
+
+const Component = () => {
+  const currentWord = useTypewriter({
+    words: ["Hello World"]
+  });
+
   return (
     <div>
-      {example}
+      {currentWord}
+      <Cursor />
     </div>
-  )
-}
+  );
+};
 ```
+
+## API
+
+### Options
+
+| Name       | Type     | Default | Required | Description                                    |
+| ---------- | -------- | ------- | -------- | ---------------------------------------------- |
+| words      | string[] | []      | Yes      | An array of words you want to be typed.        |
+| min        | number   | 10      | No       | Minimum amount in ms of delay between letters. |
+| max        | number   | 80      | No       | Maximum amount in ms of delay between letters. |
+| wordDelay  | number   | 2000    | No       | Delay in ms between words in the array.        |
+| eraseDelay | number   | 1000    | No       | Delay in ms before earsing the word            |
 
 ## License
 
-MIT © [gielcobben](https://github.com/gielcobben)
-
----
-
-This hook is created using [create-react-hook](https://github.com/hermanya/create-react-hook).
+**use-typewriter** is MIT licensed.
