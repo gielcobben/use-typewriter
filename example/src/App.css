@@ -1,0 +1,49 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+	line-height: 1.15;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-weight: bold;
+  font-size: 5vw;
+  background: #000;
+  color: #fff;
+  margin: 0;
+}
+
+body > div {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes blink {
+  from, to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.cursor {
+  border-radius: 0.3vw;
+  width: 0.3vw;
+  height: 5vw;
+  background: #05F;
+  animation: blink 1s linear infinite forwards;
+}

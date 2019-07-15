@@ -53,7 +53,7 @@ export default ({
       }
     };
 
-    const type = async () => {
+    (async () => {
       for (let i = 0; i < string.length; i++) {
         await randomDelay({ min, max });
         setWord((word: string) => word + string.charAt(i));
@@ -63,9 +63,7 @@ export default ({
           erase();
         }
       }
-    };
-
-    type();
+    })();
   }, [currentWord]);
 
   return word;
