@@ -1,3 +1,24 @@
+::selection {
+  color: #FFF;
+  background: rgba(0, 85, 255, 0.99);
+}
+
+::-moz-selection {
+  color: #FFF;
+  background: rgba(0, 85, 255, 0.99);
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+
 html,
 body {
   width: 100%;
@@ -11,8 +32,7 @@ html {
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-  font-weight: bold;
-  font-size: 5vw;
+  font-size: 18px;
   background: #000;
   color: #fff;
   margin: 0;
@@ -23,12 +43,42 @@ body > div {
   height: 100%;
 }
 
+a {
+  opacity: 0.5;
+  transition: opacity 0.2s ease;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+li {
+  margin: 0 20px;
+}
+
 .wrapper {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 100%;
+  padding: 200px 40px;
+}
+
+.typewriter {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 5vw;
+  height: 5vw;
 }
 
 @keyframes blink {
@@ -46,4 +96,38 @@ body > div {
   height: 5vw;
   background: #05F;
   animation: blink 1s linear infinite forwards;
+}
+
+.controls {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  margin: 100px auto;
+}
+
+.slider {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+label {
+  width: 150px;
+}
+
+input[type="range"] {
+  appearance: none;
+  height: 2px;
+  border-radius: 2px;
+  outline: none;
+  width: 250px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  background: #fff;
 }

@@ -31,26 +31,6 @@ const Component = () => {
 };
 ```
 
-### With Cursor
-
-```tsx
-import React from "react";
-import useTypewriter, { Cursor } from "use-typewriter";
-
-const Component = () => {
-  const currentWord = useTypewriter({
-    words: ["Hello World"]
-  });
-
-  return (
-    <div>
-      {currentWord}
-      <Cursor />
-    </div>
-  );
-};
-```
-
 ## API
 
 ### Options
