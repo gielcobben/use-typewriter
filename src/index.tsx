@@ -4,8 +4,8 @@ export type typewriterProps = {
   words: string[];
   min?: number;
   max?: number;
-  wordDelay: number;
-  eraseDelay: number;
+  wordDelay?: number;
+  eraseDelay?: number;
 };
 
 const delay = (ms: number) => {

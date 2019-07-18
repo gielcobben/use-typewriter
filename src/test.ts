@@ -1,7 +1,8 @@
-import { useMyHook } from './'
+import useTypewriter, { typewriterProps } from "./";
 
-describe('useMyHook', () => {
-  it('is truthy', () => {
-    expect(useMyHook).toBeTruthy()
-  })
-})
+describe("useTypewriter", () => {
+  it("Should return currentWord", () => {
+    const currentWord = useTypewriter({ words: ["Giel"] });
+    console.log("TEST", currentWord);
+  });
+});
