@@ -1,13 +1,13 @@
 {
-  "main.css": "/use-typewriter/static/css/main.b280b207.chunk.css",
-  "main.js": "/use-typewriter/static/js/main.31b0669a.chunk.js",
-  "main.js.map": "/use-typewriter/static/js/main.31b0669a.chunk.js.map",
+  "main.css": "/use-typewriter/static/css/main.25bf79a1.chunk.css",
+  "main.js": "/use-typewriter/static/js/main.98dae5e0.chunk.js",
+  "main.js.map": "/use-typewriter/static/js/main.98dae5e0.chunk.js.map",
   "runtime~main.js": "/use-typewriter/static/js/runtime~main.d59cfdb5.js",
   "runtime~main.js.map": "/use-typewriter/static/js/runtime~main.d59cfdb5.js.map",
-  "static/js/2.52ed8df3.chunk.js": "/use-typewriter/static/js/2.52ed8df3.chunk.js",
-  "static/js/2.52ed8df3.chunk.js.map": "/use-typewriter/static/js/2.52ed8df3.chunk.js.map",
+  "static/js/2.670ab1e8.chunk.js": "/use-typewriter/static/js/2.670ab1e8.chunk.js",
+  "static/js/2.670ab1e8.chunk.js.map": "/use-typewriter/static/js/2.670ab1e8.chunk.js.map",
   "index.html": "/use-typewriter/index.html",
-  "precache-manifest.6c60d2df15cbfa1da14fc25ee08c1cd0.js": "/use-typewriter/precache-manifest.6c60d2df15cbfa1da14fc25ee08c1cd0.js",
+  "precache-manifest.b573766f01304f4afc3f8edf2e8aa488.js": "/use-typewriter/precache-manifest.b573766f01304f4afc3f8edf2e8aa488.js",
   "service-worker.js": "/use-typewriter/service-worker.js",
-  "static/css/main.b280b207.chunk.css.map": "/use-typewriter/static/css/main.b280b207.chunk.css.map"
+  "static/css/main.25bf79a1.chunk.css.map": "/use-typewriter/static/css/main.25bf79a1.chunk.css.map"
 }
